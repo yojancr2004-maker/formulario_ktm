@@ -76,7 +76,7 @@ export default function FormularioRegistro({ onRegisterSuccess, goToLogin }) {
   return (
     <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{ flex: 1, backgroundColor: '#121212' }} keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 20}>
       <ScrollView contentContainerStyle={styles.container} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
-        <Text style={styles.ktmBrand}>KTM READY TO RACE</Text>
+        <Text style={styles.ktmBrand}>BIENVENIDOS</Text>
         <Text style={styles.title}>Registro de Usuario</Text>
 
         {renderInput('nombre', 'Nombre')}
@@ -129,7 +129,7 @@ export default function FormularioRegistro({ onRegisterSuccess, goToLogin }) {
 
 const styles = StyleSheet.create({
   container: { padding: 20, paddingTop: 50, paddingBottom: 80, backgroundColor: '#121212' },
-  ktmBrand: { fontSize: 14, color: '#FF6600', fontWeight: '900', letterSpacing: 2, textAlign: 'center', marginBottom: 5 },
+  ktmBrand: { fontSize: 14, color: '#fa2b24', fontWeight: '900', letterSpacing: 2, textAlign: 'center', marginBottom: 5 },
   title: { fontSize: 24, color: '#fff', fontWeight: 'bold', marginBottom: 20, textAlign: 'center' },
   input: { width: '100%', backgroundColor: '#1e1e1e', color: '#fff', padding: 12, borderRadius: 8, marginBottom: 12, borderWidth: 1, borderColor: '#333' },
   inputError: { borderColor: '#ff3333', borderWidth: 2, backgroundColor: '#381212' },
@@ -137,14 +137,14 @@ const styles = StyleSheet.create({
   selectTextPlaceholder: { color: '#888', fontSize: 14 },
   selectTextError: { color: '#ff3333', fontSize: 14, fontWeight: 'bold' },
   selectTextSelected: { color: '#fff', fontSize: 14 },
-  button: { width: '100%', backgroundColor: '#FF6600', padding: 14, borderRadius: 8, alignItems: 'center', marginTop: 10, marginBottom: 15 },
+  button: { width: '100%', backgroundColor: '#f53a3a', padding: 14, borderRadius: 8, alignItems: 'center', marginTop: 10, marginBottom: 15 },
   buttonText: { color: '#fff', fontWeight: 'bold', fontSize: 16 },
   bottomNav: { width: '100%', marginTop: 5 },
   btnFull: { width: '100%', backgroundColor: '#222', padding: 12, alignItems: 'center', borderRadius: 8 },
   btnText: { color: '#aaa', fontWeight: 'bold' },
   modalOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.8)', justifyContent: 'center', alignItems: 'center', padding: 20 },
   modalContent: { width: '85%', backgroundColor: '#1e1e1e', borderRadius: 12, padding: 20, maxHeight: '50%', borderWidth: 1, borderColor: '#FF6600' },
-  modalTitle: { color: '#FF6600', fontSize: 16, fontWeight: 'bold', marginBottom: 15, textAlign: 'center' },
+  modalTitle: { color: '#f12d2d', fontSize: 16, fontWeight: 'bold', marginBottom: 15, textAlign: 'center' },
   modalItem: { paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: '#333' },
   modalItemText: { color: '#fff', fontSize: 15, textAlign: 'center' },
   modalCloseButton: { marginTop: 15, backgroundColor: '#333', padding: 10, borderRadius: 8, alignItems: 'center' },

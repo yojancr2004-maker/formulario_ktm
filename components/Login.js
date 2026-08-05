@@ -42,7 +42,6 @@ export default function Login({ usuariosRegistrados, onLoginSuccess, goToRegiste
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
-        <Text style={styles.ktmBrand}>KTM</Text>
         <Text style={styles.title}>Iniciar Sesión</Text>
 
         <TextInput
@@ -82,11 +81,11 @@ export default function Login({ usuariosRegistrados, onLoginSuccess, goToRegiste
 
 const styles = StyleSheet.create({
   container: { flexGrow: 1, justifyContent: 'center', padding: 20, backgroundColor: '#121212' },
-  ktmBrand: { fontSize: 14, color: '#FF6600', fontWeight: '900', letterSpacing: 2, textAlign: 'center', marginBottom: 5 },
+  ktmBrand: { fontSize: 14, color: '#f81d1d', fontWeight: '900', letterSpacing: 2, textAlign: 'center', marginBottom: 5 },
   title: { fontSize: 24, color: '#fff', fontWeight: 'bold', marginBottom: 25, textAlign: 'center' },
   input: { width: '100%', backgroundColor: '#1e1e1e', color: '#fff', padding: 12, borderRadius: 8, marginBottom: 15, borderWidth: 1, borderColor: '#333' },
   inputError: { borderColor: '#ff3333', borderWidth: 2, backgroundColor: '#381212' },
-  button: { width: '100%', backgroundColor: '#FF6600', padding: 14, borderRadius: 8, alignItems: 'center', marginTop: 10, marginBottom: 15 },
+  button: { width: '100%', backgroundColor: '#fa2828', padding: 14, borderRadius: 8, alignItems: 'center', marginTop: 10, marginBottom: 15 },
   buttonText: { color: '#fff', fontWeight: 'bold', fontSize: 16 },
   bottomNav: { width: '100%', marginTop: 5 },
   btnFull: { width: '100%', backgroundColor: '#222', padding: 12, alignItems: 'center', borderRadius: 8 },
